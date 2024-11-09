@@ -4,28 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jungle Cafe</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #2c5f2d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #ffb142;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x900/?jungle,cafe');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            padding: 100px 20px;
+        }
+
+        .form-container iframe {
+            width: 100%;
+            max-width: 800px;
+            height: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #2c5f2d;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: #ffb142;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
+
     <header>
-        <h1>Welcome to Jungle Cafe</h1>
+        <h1>Jungle Cafe</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="application.html">Apply Now</a></li>
-                <li><a href="staff.html">Staff</a></li>
-                <li><a href="links.html">Links</a></li>
-            </ul>
+            <a href="#home">Home</a>
+            <a href="#application">Apply Now</a>
+            <a href="#staff">Staff</a>
+            <a href="#links">Links</a>
         </nav>
     </header>
-    <section>
-        <h2>About Us</h2>
-        <p>Jungle Cafe offers a unique experience with exotic coffee and delightful snacks. Join us for a taste of the wild!</p>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Jungle Cafe</h2>
+        <p>Experience the vibrant atmosphere and exceptional service at Jungle Cafe.</p>
     </section>
+
+    <!-- Application Section -->
+    <section id="application">
+        <h2>Join Our Team</h2>
+        <p>We are looking for passionate individuals to join our amazing team. Could you fill out the application form below? </p>
+        <div class="form-container">
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfU5ZC7UPrZYMyicavRn6miDg-aDE38HwXs6guhCz5MNXfvaA/viewform?embedded=true" width="640" height="2834" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>        </div>
+    </section>
+
+    <!-- Staff Section -->
+    <section id="staff">
+        <h2>Meet Our Staff</h2>
+        <p>Our dedicated team is here to provide you with the best experience. Meet the people who make it all happen:</p>
+        <ul>
+            <li><strong>jacey</strong> - Manager</li>
+            <li><strong>mootube10,Jacey</strong> - Customer Service</li>
+            <li><strong>mootube10</strong> - Website developer</li>
+        </ul>
+    </section>
+
+    <!-- Links Section -->
+    <section id="links">
+        <h2>Connect With Us</h2>
+        <p>Follow us on our social media channels to stay up-to-date with the latest news and promotions:</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Jungle Cafe. All rights reserved.</p>
     </footer>
- <!--Start of Tawk.to Script-->
+<!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -38,5 +152,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
 </body>
 </html>
